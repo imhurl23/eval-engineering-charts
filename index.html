@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support agent cost vs. quality — interactive charts</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 980px;
+         margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  p { color: #555; } iframe { width: 100%; border: 0; }
+  .note { font-size: .85rem; color: #888; }
+</style>
+</head>
+<body>
+  <h1>Support-agent control logic: cost vs. quality</h1>
+  <p>Interactive versions of the charts. On the scatter, click <em>“95% CI”</em> in the legend to overlay the error bars.</p>
+
+  <h2>Cost vs. quality</h2>
+  <iframe src="cost_vs_quality_interactive.html" height="620" title="Cost vs quality"></iframe>
+
+  <h2>Resolution quality (with confidence intervals)</h2>
+  <iframe src="quality_interactive.html" height="580" title="Resolution quality"></iframe>
+
+  <h2>Cost calculator</h2>
+  <p>Enter your monthly ticket volume to project cost and quality per strategy.</p>
+  <iframe src="ticket_cost_calculator.html" height="520" title="Ticket cost calculator"></iframe>
+
+  <p class="note">For Notion: embed the individual chart URLs
+     (<code>/cost_vs_quality_interactive.html</code>, <code>/quality_interactive.html</code>) directly.</p>
+</body>
+</html>
